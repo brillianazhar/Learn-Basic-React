@@ -1,0 +1,190 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --primary-color : #DCF2F1;
+  --secondary-color : #7FC7D9;
+  --third-color : #365486;
+  --light-text-color : rgb(242, 242, 242);
+  --dark-text-color : #0F1035;
+}
+
+body{
+  font-family: "Poppins";
+  background-color: gainsboro; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 500px;
+  margin: 50px auto;
+  box-shadow: 3px 3px 5px #3333336d;
+  border-radius: 10px;
+  background-color: var(--light-text-color);
+}
+
+.container .header{
+  height: 100px;
+  display: flex;
+  border-radius: 10px 10px 0 0;
+}
+
+.container .header h1{
+  margin: auto;
+  color: var(--third-color);
+  font-size: 40px;
+}
+
+.container form{
+  height: 50px;
+  background-color: var(--light-text-color);
+  padding: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container form input{
+  background-color: var(--light-text-color);
+  border: 3px solid var(--third-color);
+  padding: 5px;
+  height: 100%;
+  width: 80%;
+  margin-right: 2px;
+  outline: none;
+  transition: .2s ease;
+  border-radius: 10px;
+  color: var(--dark-text-color);
+  font-size: .9rem;
+}
+
+.container form input:focus{
+  border: 3px solid var(--dark-text-color);
+}
+
+.container form button{
+  border: none;
+  background-color: var(--third-color);
+  color: var(--light-text-color);
+  padding: 5px;
+  height: 100%;
+  width: 20%;
+  font-size: .9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .2s ease;
+  border-radius: 10px;
+}
+
+.container form button:hover{
+  background-color: var(--dark-text-color);
+}
+
+.container .list{
+  height: 400px;
+  background-color: var(--light-text-color);
+}
+
+.container .footer{
+  height: 50px;
+  background-color: var(--third-color);
+  border-radius: 0 0 10px 10px;
+}
+
+.container .list{
+  width: 100%;
+  padding: 7px;
+}
+
+.container .list .action{
+  height: 10%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list .action select{
+  border: none;
+  width: 70%;
+  height: 60%;
+  background-color: var(--secondary-color);
+  color: var(--light-text-color);
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
+  transition: .2s;
+}
+
+.list .action button{
+  width: 25%;
+  height: 60%;
+  border-radius: 10px;
+  border: none;
+  color: var(--light-text-color);
+  background-color: rgb(202, 46, 46);
+  cursor: pointer;
+}
+
+.list .action button:hover{
+  background-color: rgb(154, 15, 15);
+}
+
+.container .list ul{
+  height: 90%;
+  padding: 10px 5px 5px 5px;
+  list-style: none;
+  width: 100%;
+  overflow: auto;
+}
+
+.container .list ul li{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  transition: .2s;
+  margin-bottom: 5px;
+}
+
+.container .list ul li:hover{
+  background-color: rgb(226, 226, 226);
+}
+
+.container .list ul li input{
+  width: 10%;
+
+}
+
+.container .list ul li span{
+  width: 75%;
+}
+
+.container .list ul li button{
+  width: 10%;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: transparent;
+  color: rgb(202, 46, 46);
+  cursor: pointer;
+}
+.container .list ul li button:hover{
+  color: rgb(154, 15, 15);
+}
+
+.footer{
+  color: var(--light-text-color);
+  padding: 5px;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
